@@ -1,0 +1,346 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@500&display=swap');
+:root {
+    --corPalet1: #4F7CAC;
+    --corPalet2: #3C474B;
+    --corPalet3: #C0E0DE;
+    --corPalet4: #42BFDD;
+}
+
+
+.linha {
+    /* Um grid deve sempre ter 960px de width */
+    width: 960px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.coluna {
+    padding: 0 10px;
+    float: left;
+}
+
+/* A medida das colunas vai ser sempre o tamanho da anterior + 80px */
+/* OBS: Somente podemos ter até no máximo 12 colunas */
+.col1 {
+    width: 60px;
+}
+
+.col2 {
+    width: 140px;
+}
+
+.col3 {
+    width: 220px;
+}
+
+.col4 {
+    width: 300px;
+}
+
+.col5 {
+    width: 380px;
+}
+
+.col6 {
+    width: 460px;
+}
+
+.col7 {
+    width: 540px;
+}
+
+.col8 {
+    width: 620px;
+}
+
+.col9 {
+    width: 700px;
+}
+
+.col10 {
+    width: 780px;
+}
+
+.col11 {
+    width: 860px;
+}
+
+.col12 {
+    width: 940px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Códigos reaproveitáveis */
+
+ul.borda div li img, ol.borda div li img {
+    margin: 0vh auto;
+}
+
+ul.borda div , ol.borda div{
+    background-color: var(--corPalet3);
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+ul.borda div:hover , ol.borda div:hover {
+    background-color: var(--corPalet2);
+}
+ul.flex  , ol.inline  { /* Serve para deixar os botões do header deitados */
+    display: flex;
+    margin-right: 15px;
+}
+
+ul.sem-marcador, ol.sem-marcador { /* Caso a classe não estaja colocado a tag selecionada, o comando não ira funcionar! */
+    list-style: none; /* Ou seja, faça isso p.texto-importante e NÃO p .texto-importante */
+}
+
+.sem-margin {
+    margin: 0 !important; /* Define para que o comando seja executado, mesmo quando temos um elemento definindo margin */
+}
+
+.sem-padding {
+    padding: 0 !important; /* Define para que o comando seja executado, mesmo quando temos um elemento definindo padding */
+}
+
+
+ul.formatado{
+    font-size: 16px;
+    font-family: 'Roboto',Verdana, 'Geneva', Tahoma, sans-serif;
+}
+div ul.formatado {
+    background-color: #B8C4CB;
+    padding: 1px 0 1px 10px;
+    border: 2px solid black;
+}
+
+div ul h3, div ul.formatado h2 {
+    text-align: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+ul.borda div:last-child , ol.borda div:last-child {
+    cursor: pointer;
+    background-color: none;
+    width: 0;
+    height: 0;
+}
+
+
+div ul.projeto li {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+
+div ul.projeto li div.descricao a {
+    text-decoration: none;
+    color: var(--corPalet1);
+    background-color: var(--corPalet1);
+    width: 90px;
+    height: 40px;
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+}
+
+div ul.projeto li div.descricao a:hover {
+    background-color: var(--corPalet2);
+    border: 2px white solid;
+}
+
+
+div ul.projeto li div.flex-row .descricao a {
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    margin-left: 4vw;
+}
+
+div ul.projeto li div.flex-row .descricao {
+    padding-left: 15px;
+}
+
+
+
+
+
+
+
+/* Layout do site */
+
+
+.header {
+    background-color:var(--corPalet1) ;
+}
+
+.header .linha header .coluna.col4 h1 {
+    font-weight: bold;
+    font-family: 'Roboto Slab','Georgia', 'Times New Roman', Times, serif;
+}
+
+ul.flex-column li {
+    border: 2px solid black;
+}
+ul.flex-column li:last-child {
+    border-bottom: 4px solid black;
+}
+
+
+ul.flex-column li.opcao:hover {
+    cursor: pointer;
+    background-color: var(--corPalet2);
+    color: white;
+}
+
+ul.flex-column li p{
+    margin-right: 50px;
+}
+
+
+
+ul.formatado li div.flex-row .imagem img{
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+ul.formatado li div.flex-row .descricao h4 {
+    text-align: center;
+    
+}
+
+ul.flex-column li img {
+    margin-left: 0px;
+    height: auto;
+    float: left; /* Flutue para o lado esquerdo */
+}
+
+@media all and (min-width:300px) and (max-width:500px) {
+    .linha {
+        width: 360px;
+        margin: 0 auto;
+        overflow: auto;
+    }
+    .col1 {
+        width: 30px;
+    }
+    
+    .col2 {
+        width: 60px;
+    }
+    
+    .col3 {
+        width: 90px;
+    }
+    
+    .col4 {
+        width: 120px;
+    }
+    
+    .col5 {
+        width: 150px;
+    }
+    
+    .col6 {
+        width: 180px;
+    }
+    
+    .col7 {
+        width: 210px;
+    }
+    
+    .col8 {
+        width: 240px;
+    }
+    
+    .col9 {
+        width: 270px;
+    }
+    
+    .col10 {
+        width: 300px;
+    }
+    
+    .col11 {
+        width: 330px;
+    }
+    
+    .col12 {
+        width: 360px;
+    }
+
+    .flex-row { /* Vira no formato de coluna para dispositivos móveis */
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul.flex {
+        padding: 0;
+
+    }
+    .header .linha header .coluna.col4 h1 {
+        margin-left: 25vw;
+    }
+
+}
+
+
+@media all and  (orientation:landscape)  and (max-width:800px){
+
+    .linha {
+        width: 660px;
+        margin: 0 auto;
+        overflow: auto;
+    }
+     
+
+    
+    .col4 {
+        width: 224px;
+    }
+    
+
+    
+    .col6 {
+        width: 320px; 
+    }
+    
+
+    
+    .col8 {
+        width: 390px;
+    }
+    
+
+    
+
+    
+
+    
+
+    
+}
