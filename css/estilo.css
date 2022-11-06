@@ -239,6 +239,28 @@ ul.flex-column li img {
     float: left; /* Flutue para o lado esquerdo */
 }
 
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 20px 0;
+    font-family: 'Roboto Slab','Georgia', 'Times New Roman', Times, serif;
+}
+.footer>a {
+    text-decoration: none;
+    color: var(--corPalet1);
+    text-shadow: 1px 1px 1px black;
+}
+
+.footer>a:hover {
+    text-decoration: underline;
+    color: var(--corPalet2);
+    text-shadow: 1px 1px 1px;
+}
+
 @media all and (min-width:300px) and (max-width:500px) {
     .linha {
         width: 360px;
