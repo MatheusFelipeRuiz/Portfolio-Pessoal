@@ -11,7 +11,7 @@ Projeto simples utilizando um sistema de GRID no CSS que apresenta meu portfóli
 - 1360 x 768 
 - 1440 x 900
 
-## [Acessar site](https://matheusfeliperuiz.github.io/Portifolio-Pessoal/)
+## [Acessar site](https://matheusfeliperuiz.github.io/Portfolio-Pessoal/)
 
 ##  Desenvolvido com: 
 
